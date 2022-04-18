@@ -65,8 +65,6 @@ const modals = () => {
                 document.querySelectorAll('[data-modal]').forEach(item => {
                     if (getComputedStyle(item).display !== 'none') {
                         isAnyModalShown = true;
-                        console.log(item);
-                        console.log(isAnyModalShown);
                     }
                 });
                 if (!isAnyModalShown) {

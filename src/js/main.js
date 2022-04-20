@@ -6,6 +6,9 @@ import checkTextInputs from './modules/checkTextInputs';
 import showMoreStyles from './modules/showMoreStyles';
 import calc from './modules/calc';
 import filterElements from './modules/filterElements';
+import mouseEnterPicture from './modules/mouseEnterPicture';
+import accordion from './modules/accordion';
+import burgerMenu from './modules/burgerMenu';
 
 window.addEventListener('DOMContentLoaded', () => {
 'use strict';
@@ -19,6 +22,9 @@ checkTextInputs();
 showMoreStyles('#styles .row', '.button-styles');
 calc('#size', '#material', '#options', '.promocode', '.calc-price');
 filterElements();
+mouseEnterPicture();
+accordion('.accordion-heading', '.accordion-block');
+burgerMenu('.burger', '.burger-menu');
 
 
 });

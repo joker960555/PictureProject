@@ -5,23 +5,15 @@ const filterElements = function () {
           buttons = document.querySelectorAll('.portfolio-item'),
           addMoreBlock = document.querySelector('.portfolio-no');
 
-    const setAnimations = () => {
-        images.forEach(item => {
-            item.classList.add('animated');
-        });
-        addMoreBlock.classList.add('animated');
-    };
-    setAnimations();
-
     const removeActiveCards = () => {
         addMoreBlock.style.display = 'none';
-        addMoreBlock.classList.remove('fadeIn');
+        addMoreBlock.classList.remove('animated', 'fadeIn');
         images.forEach((item) => {
             item.style.display = 'none';
-            item.classList.remove('fadeIn');
+            item.classList.remove('animated', 'fadeIn');
         });
         buttons.forEach((item) => {
-            item.classList.remove('active');
+            item.classList.remove('animated', 'active');
         });
     };
 
@@ -36,14 +28,14 @@ const filterElements = function () {
             if (e.matches('.grandmother') || e.matches('.granddad')) {
                 setTimeout(() => {
                     addMoreBlock.style.display = 'block';
-                    addMoreBlock.classList.add('fadeIn');
+                    addMoreBlock.classList.add('animated', 'fadeIn');
                 }, 0);
             } else {
                 setTimeout(() => {
                     images.forEach(item => {
                         if (item.classList.contains(className)) {
                                 item.style.display = 'block';
-                                item.classList.add('fadeIn');
+                                item.classList.add('animated', 'fadeIn');
                         }
                     });
                 }, 0);

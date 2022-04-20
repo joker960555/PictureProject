@@ -24,8 +24,6 @@ const calc = (sizeSel, materialSel, optionsSel, promoSel, calcSel) => {
     options.addEventListener('change', calculations);
     promo.addEventListener('input', calculations);
 
-
-
 };
 
 export default calc;

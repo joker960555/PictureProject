@@ -9,6 +9,7 @@ import filterElements from './modules/filterElements';
 import mouseEnterPicture from './modules/mouseEnterPicture';
 import accordion from './modules/accordion';
 import burgerMenu from './modules/burgerMenu';
+import scrolling from './modules/scrolling';
 
 window.addEventListener('DOMContentLoaded', () => {
 'use strict';
@@ -25,6 +26,6 @@ filterElements();
 mouseEnterPicture();
 accordion('.accordion-heading', '.accordion-block');
 burgerMenu('.burger', '.burger-menu');
-
+scrolling('.pageup');
 
 });

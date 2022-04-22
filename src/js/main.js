@@ -10,6 +10,7 @@ import mouseEnterPicture from './modules/mouseEnterPicture';
 import accordion from './modules/accordion';
 import burgerMenu from './modules/burgerMenu';
 import scrolling from './modules/scrolling';
+import dragDrop from './modules/dragDrop';
 
 window.addEventListener('DOMContentLoaded', () => {
 'use strict';
@@ -27,5 +28,6 @@ mouseEnterPicture();
 accordion('.accordion-heading', '.accordion-block');
 burgerMenu('.burger', '.burger-menu');
 scrolling('.pageup');
+dragDrop();
 
 });
